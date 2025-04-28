@@ -1,4 +1,3 @@
-```markdown
 # VisionText OCR
 
 🔎 A lightweight, fast, and beautiful web app for Optical Character Recognition (OCR) built using **Streamlit** and **Tesseract OCR**.  
@@ -98,5 +97,3 @@ visiontext-ocr/
 If you like this project, give it a ⭐️ on GitHub!  
 Pull requests are welcome!
 
----
-```
