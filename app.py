@@ -3,10 +3,8 @@ from PIL import Image
 import pytesseract
 import base64
 
-# Set Tesseract path if on Windows
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Change path if needed
 
-# Page configuration
 st.set_page_config(
     page_title="VisionText OCR",
     page_icon="📜",
@@ -14,7 +12,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for better styling
 st.markdown("""
     <style>
         body {
@@ -46,7 +43,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Sidebar for upload
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/535/535137.png", width=100)
     st.header("📤 Upload Your Image")
@@ -54,12 +50,10 @@ with st.sidebar:
     st.markdown("---")
     st.caption("Made with ❤️ using Tesseract OCR")
 
-# Main area
 st.markdown('<p class="big-font">VisionText OCR App</p>', unsafe_allow_html=True)
 st.markdown('<p class="sub-font">Extract text from any image instantly with beautiful results!</p>', unsafe_allow_html=True)
 st.markdown("---")
 
-# Handle uploaded file
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
 
